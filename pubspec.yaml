@@ -1,0 +1,49 @@
+name: the_system
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.0-265.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # --- OTAK & LOGIKA ---
+  # Untuk State Management (Mengatur Level & XP Real-time)
+  provider: ^6.1.2
+  # Untuk Integrasi Gemini AI (Fitur "The System")
+  google_generative_ai: ^0.4.0
+  # Untuk ID unik setiap Quest
+  uuid: ^4.4.0
+
+  # --- MEMORI (DATABASE) ---
+  # Database lokal super cepat untuk simpan stats Hunter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # --- VISUAL (UI KEREN) ---
+  # Font futuristik/gaming
+  google_fonts: ^6.2.1
+  # Untuk membuat HP Bar dan XP Bar
+  percent_indicator: ^4.2.3
+  # Animasi saat Level Up
+  flutter_animate: ^4.5.0
+  fl_chart: ^0.69.0
+  # TAMBAH INI:
+  audioplayers: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # Alat bantu untuk Database Hive (Code Generator)
+  build_runner: ^2.4.9
+  hive_generator: ^2.0.1
+  flutter_tts: ^3.8.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
